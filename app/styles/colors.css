@@ -1,0 +1,33 @@
+nav a {
+  color: unset;
+  font-family: unset;
+}
+
+nav {
+  background-color: rgba(25,25,25,.03);
+    color: #343a40;
+}
+
+nav > *:not(.logo):hover {
+
+  background-color: #1f242146;
+  
+  color: white;
+}
+
+header {
+  color: white;
+}
+
+body {
+  background-image: url("images/87.jpg");
+  background-size: cover;
+  background-repeat: round;}
+
+button {
+  background-color: #8b06065f;
+  color: white;
+  padding: 20px;
+}
+
+

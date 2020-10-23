@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | MTW2</title>
+  <link rel="stylesheet" href="login.css">
+  <script defer src="login.js"></script>
+</head>
+
+<div class="bg-modal" id="pantallaNegra" style="display: none;"></div>
+<body>
+  <div class="form-container">
+
+    <h1>LOGIN</h1>
+    
+    <div class="flex-column group">
+      <label>Email:</label>
+      <input type="text" placeholder="ejemplo@ejemplo.com">
+    </div>
+    <div class="flex-column group">
+      <label>Contraseña:</label>
+      <input type="text" placeholder="**********">
+    </div>
+
+
+    <button class="primary-button">Log In</button>
+
+    <p onclick="modalContent('forgotPassword')">I forgot my password</p>
+
+  </div>
+
+  <!-- MODAL SECTION -->
+  <div class="modal-content" id="forgotPassword" style="display: none;">
+
+    <div class="modal-header">
+      <h2>New Password</h2>
+      <div class="close close-forgotPassword" style="font-size: 30px;">+</div>
+    </div>
+
+    <div class="group">
+      We're gonna send you an imail to create a new password.
+    </div>
+
+    <div class="flex-column group">
+      <label>Email:</label>
+      <input type="text" placeholder="ejemplo@ejemplo.com">
+    </div>
+
+    <button class="primary-button">Send it Now!</button>
+
+  </div>
+</body>
+</html>
+

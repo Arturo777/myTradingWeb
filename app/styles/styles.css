@@ -1,0 +1,231 @@
+
+.info {
+  display: flex;
+  align-items: baseline;
+  margin: 5px 20px 5px 0px;}
+
+.columnA {
+  width: 25%;
+}
+
+.columnB {
+  width: 100%;
+  margin-left: 50px;
+}
+
+#screenContainer {
+  height: 400px;
+  background-color: rgba(50,50,50,.3);
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  border-radius: 9px;
+  width: 100%;
+}
+
+#candleHeight {
+  position: relative;
+  margin: -168px;
+  transform: rotate(-90deg);
+  top: 194px;
+  width: 400px;
+}
+
+#velaUp {
+  width:100px;
+  background-color: green;
+  height: 0%;
+  border: 2px solid black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition-timing-function: linear;
+  border-bottom: none;
+  z-index: 2;
+}
+
+#velaDown {
+  width:100px;
+  background-color: red;
+  height: 0%;
+  border: 2px solid black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -0%);
+  transition-timing-function: linear;
+  border-top: none;
+  z-index: 2;
+}
+
+#spikeUp {
+  border-left: 2px solid black;
+  width:100px;
+  height: 0%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-205%, -100%);
+}
+
+#spikeDown {
+  border-left: 2px solid black;
+  width:100px;
+  height: 0%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-305%, -0%);
+}
+
+.slider {
+  margin-right: 25px;
+}
+
+#buttons {
+  flex-grow: 1;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#play, #stop {
+  height: 60px;
+  width: 100%;
+}
+
+nav {
+  padding: 0px 15px;
+}
+
+#sliderMain-container, #speed  {
+  transform: rotate(180deg);
+}
+nav .logo h1 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+nav div, nav a {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: .4s;
+}
+
+nav div h3, nav a h3 {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: monospace;
+  max-width: 100px;
+}
+
+nav > * {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+nav > *:not(:nth-child(1)) {
+  min-width: 150px;
+  justify-content: center;  
+}
+
+nav div:nth-child(2) {
+  margin-left: auto;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page {
+  padding: 0 50px;
+} 
+
+.logo {
+  font-family: 'David Libre', serif;
+  color: #212529;
+  font-size: 19px;
+}
+
+.column {
+  margin: 20px;
+  width: 300px;
+  padding: 40px;
+  background-color: rgba(225,225,225,.5);
+  color: #333A41;
+  border-radius: 5px;
+  font-family: 'Source Code Pro', monospace;
+  justify-content: space-between;
+  box-shadow: 10px 10px 68px 3px rgba(0,0,0,0.75);
+  line-height: 26px;
+}
+
+.screenNslide {
+  justify-content: flex-start;
+}
+
+.columns {
+  justify-content: space-evenly;
+}
+
+.columnC {
+  margin-left: 50px;
+  align-items: flex-start;
+}
+
+.risk-row > * {
+  flex-grow: 1;
+}
+
+.history-balance {
+  margin-left: 50px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.lots-calculator {
+  width: 52%;
+}
+
+.lots-calculator > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.lots-calculator input {
+  outline: none;
+  border: none;
+  line-height: 30px;
+  border-radius: 6px;
+  width: 26%;
+  background-color: #1f2421;
+  color: white;
+  font-size: 18px;
+  padding-left: 7px;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.main-risk {
+  font-size: 20px;
+}
+
+.h-table {
+  justify-content: space-around;
+  font-weight: 1000;
+  font-size: 24px;
+}
+
+#lots {
+  font-size: 30px;
+}

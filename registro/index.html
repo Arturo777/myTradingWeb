@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="registroApp" ng-controller="mainCtrl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | MTW2</title>
+
+  <!-- INCLUIR ANGULAR -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="./../login/angular/app2.js"></script>
+
+  <!-- INCLUIR SERVICIOS -->
+  <script src="./../login/login.js"></script>
+  <link rel="stylesheet" href="./../login/login.css">
+</head>
+<body>
+  
+  <form ng-submit="registrar(1,datos)" class="form-container">  
+    <div class="form-container">
+
+      
+        <h1>REGISTRO</h1>
+        <div class="flex-column group">
+          <label>Nombre:</label>
+          <input type="text" placeholder="Your Name Here" required>
+        </div>
+      
+        <div class="flex-column group">
+          <label>Email:</label>
+          <input type="text" placeholder="Your Email Here" required>
+        </div>
+      
+        <div class="flex-column group">
+          <label>Contraseña:</label>
+          <input type="text" type="password" placeholder="**********" required type="password">
+        </div>
+      
+        <div class="flex-column group">
+          <label>Confirmar contraseña:</label>
+          <input type="text" type="password" placeholder="**********" required type="password">
+        </div>
+      
+        <button class="primary-button">Registrarse</button>
+    </div>
+  </form>
+</body>
+</html>
+

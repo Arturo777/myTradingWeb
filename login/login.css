@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=David+Libre:wght@500&family=Source+Code+Pro&display=swap');
+* {
+  box-sizing: border-box;
+  
+}
+button {
+  outline: none;
+}
+body {
+  margin: 0;
+  font-family: 'Cutive Mono', monospace !important;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-button {
+  background-image: url("images/470.jpg");
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 8px;
+  box-shadow: -14px 17px 33px 4px rgba(0,0,0,0.75);
+  cursor: pointer;
+  transition: .5s;
+  outline: none;
+  border: none;
+}
+
+.primary-button:hover {
+  box-shadow: 14px 17px 33px 4px rgba(0,0,0,0.75);
+  outline: none;
+  font-size: 25px;
+}
+
+nav a {
+  color: unset;
+  font-family: unset;
+}
+
+nav {
+  background-color: rgba(25,25,25,.03);
+    color: #343a40;
+}
+
+nav > *:not(.logo):hover {
+  background-color: #1f242146;
+  color: white;
+}
+
+header {
+  color: white;
+}
+
+body {
+  background-image: url("images/87.jpg");
+  background-size: cover;
+  background-repeat: round;
+}
+
+button {
+  background-color: #8b06065f;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  margin-top: 13px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.form-container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  box-shadow: -2px 3px 52px -39px rgba(0,0,0,0.75);
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 7px;
+  margin: auto;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.group {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+input {
+  background-color: rgb(33, 33, 33);
+  outline: none;
+  border: none;
+  line-height: 30px;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 7px;
+
+}
+
+::placeholder {
+  color: gray;
+}
+
+.form-container p {
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.form-container p:hover {
+  text-decoration: underline;
+}
+
+/* MODAL CONTTENT */
+.bg-modal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+z-index: 3;
+}
+
+.modal-content{
+  background-color: white;
+  position: fixed;
+  width: 70%;
+  z-index: 99;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  padding: 4%;
+  max-height: 93.5%;
+  width: 500px;
+}
+  
+.modal-header h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #516177;
+  margin-bottom: 25px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 26.45px;
+}
+  
+.modal-btns {
+  display:flex;
+  justify-content: space-between;
+  margin: 25px 10px 0px -10px;
+}
+  
+.modal-btns .button-primary {
+  width:162px;
+}
+
+.close {
+  align-self: flex-start;
+  margin-top: -12px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  font-size: 82px !important;
+  font-weight: 200;
+  position: absolute;
+  top: -3px;
+  right: 25px;
+}
+
+.close:hover {
+  color:black;
+}
+.modal-content .box-upload {
+  align-items: flex-start;
+}

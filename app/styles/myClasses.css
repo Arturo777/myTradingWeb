@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=David+Libre:wght@500&family=Source+Code+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cutive Mono', monospace !important;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-button {
+  background-image: url("images/470.jpg");
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 8px;
+  box-shadow: -14px 17px 33px 4px rgba(0,0,0,0.75);
+  cursor: pointer;
+  transition: .5s;
+  outline: none;
+  border: none;
+}
+
+.primary-button:hover {
+  box-shadow: 14px 17px 33px 4px rgba(0,0,0,0.75);
+  outline: none;
+  font-size: 25px;
+}
