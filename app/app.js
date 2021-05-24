@@ -50,7 +50,7 @@ let sliderHeight;
 
 function setup() {
 
-	 noCanvas();
+	noCanvas();
 	console.log("isWorking");
 
 	//LOT SIZE
@@ -132,10 +132,7 @@ function askPrice() {
 	}
 
 	//console.log(urlF);
-
-
-
-	//WHAT'S THIS?
+	// WHAT'S THIS? FETCH THE DATA
 	loadJSON(urlF, gotData);
 }
 
@@ -145,7 +142,6 @@ function gotData(data) {
 	data = JSON.parse(old);
 
 	//SPLIT STRING
-
 	let splitString = split(timeFrame.value(), '=');
 
 	let intraDayString = "Time_Series_FX_("+splitString[1]+")";
@@ -170,10 +166,10 @@ function gotData(data) {
 		//PRICES
 		prices = Object.values(data[intraDayString]);
 	}
-		// console.log(splitString[1]);
+	// console.log(splitString[1]);
 
-		//console.log(rows);
-		 loading();
+	//console.log(rows);
+	loading();
 	
 
 
@@ -240,7 +236,6 @@ function draw() {
 
 function keyPressed() {
 	if (keyCode === 32) {
-		// console.log("space bar");
 	  play();
 	} 
 }
